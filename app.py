@@ -2,14 +2,14 @@ from flask import Flask, render_template, request, redirect, session
 import mysql.connector
 
 app = Flask(__name__)
-app.secret_key = 'flask'
+app.secret_key = 'your app key'
 
 # MySQL Connection
 conn = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="root00",
-  database="pfe"
+  host="your hostname",
+  user="username",
+  password="password",
+  database="db name"
 )
 
 # Register Route
